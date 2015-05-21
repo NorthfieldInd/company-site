@@ -1,0 +1,63 @@
+
+@mixin btn {
+  @include font-size(16px);
+  display: inline-block;
+  padding: 0.25em 1em;
+  background: $blue;
+  color: #fff;
+  font-family: $gridnik;
+  font-weight: $bold;
+  text-transform: uppercase;
+  text-align: center;
+  
+  &:hover {
+  }
+}
+
+@mixin btn-white {
+  @include font-size(17px);
+  display: inline-block;
+  width: 200px;
+  padding: 0.6em 0 0.7em;
+  background: #fff;
+  border-radius: 30px;
+  color: $green;
+  font-weight: $bold;
+  text-transform: uppercase;
+  text-align: center;
+  
+  &:hover {
+  }
+}
+
+a {
+  @include global-transition;
+	color: $green;
+	
+	&:hover {
+	}
+}
+
+.btn {
+  @include btn;
+  
+  &.red {
+    background: $red;
+    
+    &:hover {
+    }
+  }
+}
+
+.cta-link {
+  @include font-size(18px);
+  font-weight: $med;
+  
+  .icon-next {
+    width: 8px;
+    height: 18px;
+    margin-left: 6px;
+    fill: $green;
+    vertical-align: middle;
+  }
+}

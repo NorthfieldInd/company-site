@@ -1,0 +1,36 @@
+
+.home-hero .slide {
+  height: 600px;
+}
+
+.home-hero .slide-1 {
+  background: $blue $hero-home-01 no-repeat center center;
+  background-size: cover;
+}
+
+.home-hero .slide-2 {
+  background: $blue $hero-home-02 no-repeat center center;
+  background-size: cover;
+}
+.home-hero .slide-3 {
+  background: $blue $hero-home-03 no-repeat center center;
+  background-size: cover;
+}
+
+
+.home-products [class^='col-'] {
+  padding-top: $base*2;
+}
+
+.home-products h2 {
+  margin-bottom: $base;
+}
+
+.home-products a {
+  @include btn;
+}
+
+.home-products p {
+  @include line-height(22px);
+  margin-bottom: $base;
+}

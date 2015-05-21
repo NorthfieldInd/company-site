@@ -1,0 +1,42 @@
+
+.footer {
+  background: $grey;
+  color: #fff;
+  text-align: center;
+}
+
+.footer .wrapper {
+  padding: $base*2 0;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer-nav {
+  margin-bottom: $base;
+}
+
+.footer-nav li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.footer-nav a {
+  font-weight: $med;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.footer-contact {
+  @include font-size(13px);
+  margin-bottom: $base;
+  font-weight: $med;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.footer-copyright {
+  @include font-size(11px);
+  letter-spacing: 0.1em;
+}

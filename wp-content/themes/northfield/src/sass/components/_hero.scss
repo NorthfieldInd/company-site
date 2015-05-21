@@ -1,0 +1,15 @@
+
+.hero {
+  position: relative;
+}
+
+.hero .wrapper {
+  @include bp-min-width($medium) {
+    padding-top: $base*5;
+  }
+}
+
+.hero h1,
+.hero p {
+  color: #fff;
+}

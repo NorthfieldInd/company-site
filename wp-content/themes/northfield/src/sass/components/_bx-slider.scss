@@ -1,0 +1,41 @@
+
+.bx-wrapper {
+  position: relative;
+  padding: 0;
+  *zoom: 1;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+
+.bx-wrapper img {
+  display: block;
+}
+
+.bx-viewport {
+  overflow: visible !important;
+  -webkit-transform: translatez(0);
+}
+
+.bx-controls {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.bx-pager-item {
+  float: left;
+  margin-right: 12px;
+}
+
+.bx-pager-item a {
+  display: block;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background: $grey;
+  text-indent: -9999em;
+  
+  &.active {
+    background: $lt-grey;
+  }
+}

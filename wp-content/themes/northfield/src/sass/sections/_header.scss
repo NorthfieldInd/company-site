@@ -1,0 +1,14 @@
+
+.header {
+  position: relative;
+  padding: 16px 0;
+}
+
+.logo {
+  float: left;
+
+  @include bp-min-width($medium) {
+    height: 60px;
+  }
+}
+
