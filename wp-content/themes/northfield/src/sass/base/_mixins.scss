@@ -85,12 +85,10 @@
 }
 
 @mixin font-size($size) {
-  font-size: $size;
   font-size: calculateRem($size);
 }
 
 @mixin line-height($size) {
-  line-height: $size;
   line-height: calculateRem($size);
 }
 

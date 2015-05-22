@@ -1,41 +1,67 @@
 
-@mixin btn {
-  @include font-size(16px);
-  display: inline-block;
-  padding: 0.25em 1em;
-  background: $blue;
-  color: #fff;
-  font-family: $gridnik;
-  font-weight: $bold;
-  text-transform: uppercase;
-  text-align: center;
-  
-  &:hover {
-  }
-}
-
-@mixin btn-white {
-  @include font-size(17px);
-  display: inline-block;
-  width: 200px;
-  padding: 0.6em 0 0.7em;
-  background: #fff;
-  border-radius: 30px;
-  color: $green;
-  font-weight: $bold;
-  text-transform: uppercase;
-  text-align: center;
-  
-  &:hover {
-  }
-}
-
 a {
   @include global-transition;
 	color: $green;
 	
 	&:hover {
 	}
+}
+
+
+@mixin btn {
+  @include font-size(16px);
+  display: inline-block;
+  padding: 0.5em 1em 0.6em;
+  color: #fff;
+  font-family: $gridnik;
+  font-weight: $bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@mixin btn-lt-blue {
+  background: $lt-blue;
+  
+  &:hover {
+  }
+}
+
+@mixin btn-white-red {
+  background: #fff;
+  color: $red;
+  
+  &:hover {
+  }
+}
+
+@mixin btn-white-blue {
+  background: #fff;
+  color: $blue;
+  
+  &:hover {
+  }
+}
+
+@mixin btn-white-Green {
+  background: #fff;
+  color: $green;
+  
+  &:hover {
+  }
+}
+
+@mixin btn-border-white {
+  border: 2px solid #fff;
+  
+  &:hover {
+  }
+}
+
+@mixin btn-border-green {
+  border: 2px solid $green;
+  
+  &:hover {
+  }
 }
 
 .btn {
