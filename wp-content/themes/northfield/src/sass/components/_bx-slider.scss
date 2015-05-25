@@ -16,10 +16,15 @@
   -webkit-transform: translatez(0);
 }
 
-.bx-controls {
+.home-hero .bx-controls {
   position: absolute;
   left: 20px;
   bottom: 20px;
+}
+
+.home-testimonials .bx-controls {
+  @include vertical-center(absolute);
+  width: 100%;
 }
 
 .bx-pager-item {
@@ -38,4 +43,12 @@
   &.active {
     background: $lt-grey;
   }
+}
+
+.bx-prev {
+  float: left;
+}
+
+.bx-next {
+  float: right;
 }

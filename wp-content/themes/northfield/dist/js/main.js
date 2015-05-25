@@ -110,7 +110,7 @@ $(function(){
     });
   }
   
-  projectSlider = function() {
+  heroSlider = function() {
     $('.home-hero .slider').bxSlider({
       mode: 'fade',
       auto: true,
@@ -118,7 +118,18 @@ $(function(){
       controls: false
     });
   }
-  
+
+  testimonialSlider = function() {
+    $('.home-testimonials .slider').bxSlider({
+      mode: 'fade',
+      auto: true,
+      pause: 5000,
+      pager: false,
+      nextText: '<svg class="icon-next"><use xlink:href="#icon-next" /></svg>',
+      prevText: '<svg class="icon-prev"><use xlink:href="#icon-prev" /></svg>',
+    });
+  }
+    
   $(window).on('load', function() {
     $('.animate').addClass('fade-in');
   });
@@ -126,7 +137,8 @@ $(function(){
   $(".body").fitVids();
   
   mobileNav();
-  projectSlider();
+  heroSlider();
+  testimonialSlider();
 
 });
 

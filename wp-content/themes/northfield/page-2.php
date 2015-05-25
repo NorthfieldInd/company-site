@@ -98,19 +98,28 @@
 
 		<section class="home-testimonials">
 		  <div class="wrapper">
+		  
+		    <h2 class="section-title">Customer Testimonials</h2>
 
-		    <div class="testimonials-list">
+		    <div class="testimonials-list slider">
           <?php
           $args = array( 'post_type' => 'testimonials', 'posts_per_page' => -1 );
           $myposts = get_posts( $args );
           foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-          	<p class="testimonial-quote"><?php the_content(); ?><?php the_title(); ?></p>
-          <?php endforeach; 
+          	<div class="testimonial-quote">
+          	  <?php the_content(); ?>
+          	  <p class="testimonial-customer">&ndash; <?php the_title(); ?></p>
+            </div>
+          <?php endforeach;
           wp_reset_postdata();?>
 		    </div>
 		    
-		    <div class="testimonials-logos">
-		    </div>
+		    <ul class="testimonials-logos">
+		      <li><img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo-unicarriers.png" alt=""></li>
+		      <li><img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo-cnh.png" alt=""></li>
+		      <li><img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo-vermeer.png" alt=""></li>
+		      <li><img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo-bush-hog.png" alt=""></li>
+		    </ul>
 		    
 		  </div>
 		</section>

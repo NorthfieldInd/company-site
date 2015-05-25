@@ -65,7 +65,8 @@
 }
 
 .home-solutions {
-  background: $grey;
+  background: $grey $bg-home-solutions no-repeat center center;
+  background-size: cover;
 
   @include bp-min-width($medium) {
     padding: $base*4 0;
@@ -128,8 +129,11 @@
 
 .solutions-list li {
   display: inline-block;
-  width: 30%;
   margin-bottom: $base;
+
+  @include bp-min-width($medium) {
+    width: 30%;
+  }
 }
 
 .solutions-list .icon {
@@ -154,3 +158,54 @@
   @include btn-lt-blue;
 }
 
+.home-testimonials {
+  text-align: center;
+}
+
+.home-testimonials .wrapper {
+  padding: $base*3 0;
+}
+
+.home-testimonials .section-title {
+  color: $green;
+
+  @include bp-min-width($medium) {
+    margin-bottom: $base*2;
+  }
+}
+
+.home-testimonials .bx-wrapper {
+  margin-bottom: $base*2;
+}
+
+.testimonial-quote {
+  padding: 0 40px;
+  
+  @include bp-min-width($medium) {
+    padding: 0 144px;
+  }
+}
+
+.testimonial-quote p {
+  font-style: italic;
+
+  @include bp-min-width($medium) {
+    @include font-size(27px);
+    @include line-height(35px);
+    display: inline;
+  }
+}
+
+.testimonial-customer {
+  font-weight: $bold;
+}
+
+.testimonials-logos {
+  text-align: center;
+}
+
+.testimonials-logos li {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20%;
+}
