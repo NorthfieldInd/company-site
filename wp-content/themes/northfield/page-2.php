@@ -123,6 +123,12 @@
 		    
 		  </div>
 		</section>
+		
+		<section class="bottom-section home-bottom-section">
+		  <div class="wrapper">
+		    <?php the_field('bottom_section'); ?>
+		  </div>
+		</section>
 
     <?php // get_template_part( 'partials/featured-posts' ); ?>
 

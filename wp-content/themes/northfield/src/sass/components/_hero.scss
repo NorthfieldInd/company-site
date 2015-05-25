@@ -1,6 +1,11 @@
 
 .hero {
   position: relative;
+  background: $grey;
+
+  @include bp-min-width($medium) {
+    height: 600px;
+  }
 }
 
 .hero .wrapper {

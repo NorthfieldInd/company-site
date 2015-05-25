@@ -209,3 +209,21 @@
   vertical-align: middle;
   width: 20%;
 }
+
+.home-bottom-section {
+  padding: $base*2 0;
+  background: $grey $bg-home-bottom no-repeat center center;
+  background-size: cover;
+
+  @include bp-min-width($medium) {
+    padding: $base*6 0;
+  }
+}
+
+.home-bottom-section .wrapper {
+  background: $red;
+}
+
+.home-bottom-section.bottom-section li:nth-child(1) a {
+  @include btn-white-red;
+}
