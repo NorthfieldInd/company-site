@@ -1,0 +1,24 @@
+
+.col-content {
+  padding: $base*2 5%;
+  vertical-align: middle;
+
+  @include bp-min-width($medium) {
+    height: $base*20;
+  }
+}
+
+.col-image {
+  @include bp-max-width($medium) {
+    display: none;
+  }
+}
+
+.col-content h2 {
+  margin-bottom: $base;
+
+  @include bp-min-width($medium) {
+    @include font-size(38px);
+    @include line-height(46px);
+  }
+}

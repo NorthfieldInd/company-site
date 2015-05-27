@@ -126,7 +126,7 @@
 		
 		<section class="bottom-section home-bottom-section">
 		  <div class="wrapper">
-		    <?php the_field('bottom_section'); ?>
+		    <?php the_field('home_bottom_section'); ?>
 		  </div>
 		</section>
 

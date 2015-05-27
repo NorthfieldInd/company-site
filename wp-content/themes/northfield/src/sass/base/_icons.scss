@@ -12,36 +12,6 @@ svg:not(:root) {
   vertical-align: middle;
 }
 
-.icon-truck {
-  width: 124px;
-  height: 56px;
-  fill: $lt-blue;
-}
-
-.icon-boxes {
-  width: 62px;
-  height: 61px;
-  fill: $lt-blue;
-}
-
-.icon-price {
-  width: 51px;
-  height: 65px;
-  fill: $lt-blue;
-}
-
-.icon-time {
-  width: 64px;
-  height: 60px;
-  fill: $lt-blue;
-}
-
-.icon-fast-track {
-  width: 54px;
-  height: 64px;
-  fill: $lt-blue;
-}
-
 .icon-prev {
   width: 46px;
   height: 88px;
@@ -53,4 +23,67 @@ svg:not(:root) {
   height: 88px;
   fill: $lt-green;
 }
+
+
+.solutions-list .icon-truck {
+  width: 124px;
+  height: 56px;
+  fill: $lt-blue;
+}
+
+.solutions-list .icon-boxes {
+  width: 62px;
+  height: 61px;
+  fill: $lt-blue;
+}
+
+.solutions-list .icon-price {
+  width: 51px;
+  height: 65px;
+  fill: $lt-blue;
+}
+
+.solutions-list .icon-time {
+  width: 64px;
+  height: 60px;
+  fill: $lt-blue;
+}
+
+.solutions-list .icon-fast-track {
+  width: 54px;
+  height: 64px;
+  fill: $lt-blue;
+}
+
+
+[class^="solutions-section-"] .icon-truck {
+  width: 310px;
+  height: 140px;
+  fill: #fff;
+}
+
+[class^="solutions-section-"] .icon-boxes {
+  width: 155px;
+  height: 133px;
+  fill: #fff;
+}
+
+[class^="solutions-section-"] .icon-price {
+  width: 127px;
+  height: 163px;
+  fill: #fff;
+}
+
+[class^="solutions-section-"] .icon-time {
+  width: 160px;
+  height: 145px;
+  fill: #fff;
+}
+
+[class^="solutions-section-"] .icon-fast-track {
+  width: 135px;
+  height: 160px;
+  fill: #fff;
+}
+
 

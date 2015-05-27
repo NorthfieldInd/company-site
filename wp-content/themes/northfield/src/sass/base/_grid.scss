@@ -1,18 +1,18 @@
 $pad: 20px;
 
 .row {
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     @include cf;
     margin: 0 -20px;
   }
 }
 
 .row [class^='col-'] {
-  @include bp-max-width($medium) {
+  @include bp-max-width($large) {
     margin-bottom: $base;
   }
   
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     float: left;
     padding: 0 $pad;
   }
@@ -24,7 +24,7 @@ $pad: 20px;
 }
 
 .table-row [class^='col-'] {
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     display: table-cell;
   }
 }
@@ -62,7 +62,7 @@ $pad: 20px;
 }
 
 .col-1-4 {
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     width: 50%;
     margin-bottom: $base*1.5;
   }

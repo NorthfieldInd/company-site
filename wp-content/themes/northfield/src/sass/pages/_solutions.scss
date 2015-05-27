@@ -1,1 +1,59 @@
 
+.hero.hero-solutions .wrapper {
+  @include bp-min-width($medium) {
+    padding-top: $base*4;
+  }
+}
+
+.hero-solutions .logo-solutions {
+  margin-bottom: $base;
+}
+
+.hero-solutions .logo-total-solutions {
+  display: inline-block;
+  width: 581px;
+  height: 81px;
+  fill: #fff;
+}
+
+[class^="solutions-section-"] h2 {
+  color: $lt-blue;
+}
+
+[class^="solutions-section-"] a {
+  @include btn;
+  @include btn-white-lt-blue;
+  @include btn-border-lt-blue;
+}
+
+[class^="solutions-section-"] .col-image {
+  position: relative;
+}
+
+[class^="solutions-section-"] .col-image .icon {
+  @include absolute-center;
+}
+
+.solutions-section-1 .col-image {
+  background: $blue;
+}
+
+.solutions-section-2 .col-image {
+  background: $red;
+}
+
+.solutions-section-3 .col-image {
+  background: $green;
+}
+
+.solutions-section-4 .col-image {
+  background: $blue;
+}
+
+.solutions-section-5 .col-image {
+  background: $red;
+}
+
+.solutions-section-5 p {
+  margin-bottom: $base;
+}

@@ -8,10 +8,11 @@
   }
 }
 
-.menu-main-menu-container {
+.menu-menu-1-container {
   @include bp-max-width($medium) {
     display: none;
-    
+    padding-top: $base;
+
     &.show {
       display: block;
       width: 100%;
@@ -37,8 +38,8 @@
 
   @include bp-max-width($medium) {
     padding: 12px;
-    background: $dk-grey;
-    border-top: 1px solid $grey;
+    background: $blue;
+    border-top: 1px solid $lt-blue;
     color: #fff;
   }
 
@@ -64,12 +65,13 @@
 
 .btn-mobile {
   display: block;
+  float: right;
   padding: 12px $base;
-  background: $grey;
+  background: $blue;
   color: #fff;
   
   &.active {
-    background: $dk-grey;
+    background: $lt-blue;
   }
     
   @include bp-min-width($medium) {
