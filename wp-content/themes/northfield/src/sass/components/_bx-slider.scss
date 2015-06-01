@@ -23,8 +23,15 @@
 }
 
 .home-testimonials .bx-controls {
-  @include vertical-center(absolute);
   width: 100%;
+
+  @include bp-max-width($large) {
+    position: absolute;
+    top: 20px;
+  }
+  @include bp-min-width($large) {
+    @include vertical-center(absolute);
+  }
 }
 
 .bx-pager-item {

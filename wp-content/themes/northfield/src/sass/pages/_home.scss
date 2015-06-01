@@ -194,7 +194,7 @@
   display: inline-block;
 }
 
-li:not(:last-child) {
+.home-solutions-links li:not(:last-child) {
   margin-right: 14px;
 
   @include bp-min-width($xsmall) {
@@ -211,10 +211,15 @@ li:not(:last-child) {
 }
 
 .home-testimonials .wrapper {
-  padding: $base*3 0;
+  padding: $base 0;
+
+  @include bp-min-width($medium) {
+    padding: $base*3 0;
+  }
 }
 
 .home-testimonials .section-title {
+  margin-bottom: $base;
   color: $green;
 
   @include bp-min-width($medium) {
@@ -228,8 +233,12 @@ li:not(:last-child) {
 
 .testimonial-quote {
   padding: 0 40px;
-  
+
   @include bp-min-width($medium) {
+    padding: 0 80px;
+  }
+  
+  @include bp-min-width($large) {
     padding: 0 144px;
   }
 }
@@ -256,6 +265,10 @@ li:not(:last-child) {
   display: inline-block;
   vertical-align: middle;
   width: 20%;
+
+  @include bp-max-width($medium) {
+    padding: 0 2%;
+  }
 }
 
 .home-bottom-section {

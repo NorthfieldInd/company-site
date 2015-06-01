@@ -38,9 +38,11 @@ gulp.task('sass', function() {
     })
     .pipe(sourcemaps.write())
     .pipe(autoprefixer('last 2 version'))
-/*     .pipe(gulp.dest('./')) */
+    .pipe(gulp.dest('./'))
+/*
     .pipe(minifycss())
     .pipe(gulp.dest('./'))
+*/
     .pipe(reload({stream:true}));
 });
 

@@ -12,16 +12,16 @@ svg:not(:root) {
   vertical-align: middle;
 }
 
-.icon-prev {
-  width: 46px;
-  height: 88px;
-  fill: $lt-green;
-}
-
+.icon-prev,
 .icon-next {
-  width: 46px;
-  height: 88px;
   fill: $lt-green;
+  width: 25px;
+  height: 48px;
+
+  @include bp-min-width($medium) {
+    width: 46px;
+    height: 88px;
+  }
 }
 
 
