@@ -1,16 +1,23 @@
 
 .bottom-section {
-  padding: $base*3 0;
-  background: $lt-grey $bg-bottom no-repeat center center;
-  background-size: cover;
+  @include bp-min-width($medium) {
+    padding: $base*3 5;
+    background: $lt-grey $bg-bottom no-repeat center center;
+    background-size: cover;
+  }
 }
 
 .bottom-section .wrapper {
+  width: 100%;
   max-width: 1000px;
-  padding: $base*2 10% $base*2.5;
+  padding: $base*2 5% $base*2.5;
   background: $lt-blue;
   color: #fff;
   text-align: center;
+
+  @include bp-min-width($medium) {
+    padding: $base*2 10% $base*2.5;
+  }
 }
 
 .bottom-section p {
@@ -29,7 +36,14 @@
 
 .bottom-section li {
   display: inline-block;
-  margin: 0 20px;
+}
+
+.bottom-section li:not(:last-child) {
+  margin-right: 14px;
+
+  @include bp-min-width($small) {
+    margin-right: 40px;
+  }
 }
 
 .bottom-section li:nth-child(1) a {

@@ -19,7 +19,19 @@
 
 .footer-nav li {
   display: inline-block;
-  margin: 0 20px;
+
+  @include bp-max-width($small) {
+    width: 100%;
+    margin-bottom: 6px;
+  }
+
+  @include bp-min-max($tiny, $small) {
+    width: 46%;
+  }
+
+  @include bp-min-width($small) {
+    margin: 0 20px;
+  }
 }
 
 .footer-nav a {
@@ -39,4 +51,21 @@
 .footer-copyright {
   @include font-size(11px);
   letter-spacing: 0.1em;
+}
+
+.footer .bullet,
+.footer .pipe {
+  @include bp-max-width($small) {
+    display: none;
+  }
+}
+
+
+.footer-address,
+.footer-phone,
+.footer-fax,
+.footer-credit {
+  @include bp-max-width($small) {
+    display: block;
+  }
 }
