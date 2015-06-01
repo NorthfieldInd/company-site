@@ -1,6 +1,10 @@
 
 .home-hero .slide {
-  height: 600px;
+  padding-bottom: $base*4;
+
+  @include bp-min-width($medium) {
+    height: 600px;
+  }
 }
 
 .home-hero .slide-1 {

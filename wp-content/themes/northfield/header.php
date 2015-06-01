@@ -36,7 +36,6 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
               </span>
-              <span class="menu-label">Menu</span>
             </a>
       			<?php wp_nav_menu( array('menu'=>'2') ); ?>
       		</nav>

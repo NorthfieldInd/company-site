@@ -9,21 +9,38 @@
 }
 
 .menu-menu-1-container {
-  @include bp-max-width($medium) {
+  @include bp-max-width($large) {
     display: none;
-    padding-top: $base;
+    position: absolute;
+    top: 92px;
+    right: 0;
+    z-index: 20;
+    clear: both;
+    width: 50%;
+    background: $lt-blue;
 
     &.show {
       display: block;
-      width: 100%;
-      clear: both;
     }
+  }
+
+  @include bp-max-width($medium) {
+    top: 80px;
+  }
+
+  @include bp-max-width($xsmall) {
+    width: 100%;
   }
 }
 
 .main-nav li {
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     float: left;
+  }
+}
+
+.main-nav li:not(:first-child) {
+  @include bp-min-width($large) {
     margin-left: 60px;
   }
 }
@@ -36,26 +53,26 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
 
-  @include bp-max-width($medium) {
-    padding: 12px;
-    background: $blue;
-    border-top: 1px solid $lt-blue;
+  @include bp-max-width($large) {
+    padding: 16px 26px;
+    box-shadow: inset 0 0 1px 0 rgba(255,255,255,1);
     color: #fff;
+    text-align: right;
   }
 
   &:hover {
-    @include bp-max-width($medium) {
+    @include bp-max-width($large) {
       color: #fff;
     }
 
-    @include bp-min-width($medium) {
+    @include bp-min-width($large) {
       box-shadow: 0 4px 0 $blue;
     }
   }
 }
 
 .main-nav .current-menu-item a {
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     box-shadow: 0 4px 0 $blue;
   }
 }
@@ -65,42 +82,39 @@
 
 .btn-mobile {
   display: block;
-  float: right;
-  padding: 12px $base;
-  background: $blue;
-  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  padding: 26px 26px 0;
+  color: $dk-grey;
   
   &.active {
     background: $lt-blue;
   }
     
   @include bp-min-width($medium) {
+    padding-top: 32px;
+  }
+
+  @include bp-min-width($large) {
     display: none;
   }
 }
 
-.btn-mobile .menu-label {
-  @include font-size(15px);
-  margin-left: 6px;
-  font-weight: $bold;
-  text-transform: uppercase;
-}
-
 .btn-mobile .icon-menu {
   position: relative;
-  display: inline-block;
-  vertical-align: -2px;
-  width: 20px;
-  height: 16px;
-  background: none;
+  display: block;
+  width: 34px;
 
   .bar {
     @include global-transition;
     display: block;
-    width: 20px;
-    height: 3px;
-    margin-bottom: 3px;
-    background: #fff;
+    width: 34px;
+    height: 6px;
+    margin-bottom: 5px;
+    background: $black;
   }
 
   &:nth-child(1) {
@@ -116,13 +130,9 @@
   }
 }
 
-.btn-mobile.active .icon-menu {
-  height: 9px;
-}
-
 .btn-mobile.active .bar {
   position: absolute;
-  top: 0;
+  top: 8px;
   left: 0;
   background-color: #fff;
   

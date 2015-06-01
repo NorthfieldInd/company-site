@@ -4,6 +4,7 @@ body {
 
 .container {
   background: #fff;
+
   @include bp-min-width($medium) {
     @include cf;
     max-width: 1550px;
@@ -17,6 +18,7 @@ body {
   margin: 0 auto;
 
   @include bp-min-width($medium) {
+    width: 94%;
     max-width: 1208px;
   }
   
