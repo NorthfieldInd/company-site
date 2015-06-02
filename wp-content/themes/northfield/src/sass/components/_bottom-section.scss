@@ -1,7 +1,7 @@
 
 .bottom-section {
   @include bp-min-width($medium) {
-    padding: $base*3 5;
+    padding: $base*3 5%;
     background: $lt-grey $bg-bottom no-repeat center center;
     background-size: cover;
   }

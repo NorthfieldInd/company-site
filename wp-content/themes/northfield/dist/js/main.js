@@ -129,6 +129,21 @@ $(function(){
       prevText: '<svg class="icon-prev"><use xlink:href="#icon-prev" /></svg>',
     });
   }
+
+  navScroll = function() {
+    var navLink = $('#products-nav a');
+  
+    navLink.on('click', function(e) {
+      e.preventDefault();
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+      }
+    });
+  }
     
   $(window).on('load', function() {
     $('.animate').addClass('fade-in');
@@ -139,6 +154,7 @@ $(function(){
   mobileNav();
   heroSlider();
   testimonialSlider();
+  navScroll();
 
 });
 

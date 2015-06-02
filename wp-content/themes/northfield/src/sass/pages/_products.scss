@@ -1,1 +1,97 @@
 
+.products-nav li {
+  @include bp-min-width($large) {
+    float: left;
+    width: 33.333%;
+  }
+}
+
+.products-nav li:nth-child(1) {
+  border-bottom: 4px solid $green;
+  
+  a {
+    color: $green;
+  }
+}
+
+.products-nav li:nth-child(2) {
+  border-bottom: 4px solid $blue;
+
+  a {
+    color: $blue;
+  }
+}
+
+.products-nav li:nth-child(3) {
+  border-bottom: 4px solid $red;
+
+  a {
+    color: $red;
+  }
+}
+
+.products-nav a {
+  @include font-size(21px);
+  display: block;
+  padding: $base 0;
+  text-align: center;
+  font-family: $gridnik;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  @include bp-min-width($xlarge) {
+    @include font-size(28px);
+  }
+}
+
+.products-nav .caret {
+  @include font-size(30px);
+  margin-left: 10px;
+
+  @include bp-min-width($xlarge) {
+    @include font-size(40px);
+  }
+}
+
+.products-section-1 {
+  border-bottom: 4px solid $green;
+}
+
+.products-section-1 h2 {
+  color: $green;
+}
+
+.products-section-2 {
+  border-bottom: 4px solid $blue;
+}
+
+.products-section-2 h2 {
+  color: $blue;
+}
+
+.products-section-3 {
+  border-bottom: 4px solid $red;
+}
+
+.products-section-3 h2 {
+  color: $red;
+}
+
+[class^="products-section-"] p:not(:last-child) {
+  margin-bottom: $base;
+}
+
+[class^="products-section-"] li {
+  margin-bottom: $base;
+
+  @include bp-min-width($small) {
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+[class^="products-section-"] a {
+  @include btn;
+  @include btn-white-green;
+  @include btn-border-green;
+}
