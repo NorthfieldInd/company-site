@@ -1,0 +1,80 @@
+
+[class^="fast-track-section-"] .col-content {
+  @include bp-min-width($medium) {
+    height: $base*26;
+  }
+}
+
+
+.fast-track-section-1 .col-image {
+  background: $blue;
+}
+
+.fast-track-section-1 h2 {
+  color: $blue;
+}
+
+
+.fast-track-section-1 .col-content a {
+  @include btn;
+  @include btn-white-blue;
+  @include btn-border-blue;
+}
+
+.fast-track-section-1 p,
+.fast-track-section-1 li {
+  margin-bottom: $base;
+}
+
+.fast-track-section-2 .col-image {
+  background: $green;
+}
+
+.fast-track-section-2 h2 {
+  color: $green;
+}
+
+.fast-track-section-3 .col-image {
+  background: $red;
+}
+
+.fast-track-section-3 h2 {
+  color: $red;
+}
+
+.fast-track-section-3 p {
+  margin-bottom: $base*2;
+}
+
+.fast-track-section-3 h4 {
+  margin-bottom: $base*1.5;
+  color: $red;
+}
+
+.fast-track-section-3 a {
+  font-family: $gridnik;
+  color: $red;
+  font-weight: $bold;
+  text-transform: uppercase;
+}
+
+.fast-track-section-3 .icon-file {
+  margin-right: 10px;
+}
+
+.fast-track-section-3 li {
+  margin-bottom: $base*1.5;
+
+  @include bp-min-width($medium) {
+    float: left;
+  }
+}
+
+.fast-track-section-3 li:nth-child(1),
+.fast-track-section-3 li:nth-child(3) {
+  width: 200px;
+}
+
+
+
+
