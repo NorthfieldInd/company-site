@@ -38,6 +38,12 @@ select {
   }
 }
 
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  max-width: 420px;
+}
+
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
@@ -49,7 +55,6 @@ textarea {
   overflow: auto;
   width: 100%;
   height: $base*4;
-  font: 400 1.25em/1.5em $sans;
   resize: none;
   
   @include bp-min-width($medium) {
@@ -166,66 +171,37 @@ textarea {
 
 /** Buttons ============**/
 
-input[type="submit"], button {
+.ninja-forms-form-wrap input[type="submit"] {
 	@include global-transition;
   @include btn;
-	min-width: 180px;
+  @include btn-lt-blue;
+	min-width: 120px;
   border: none;
   outline: none;
   cursor: pointer;
-  font-family: $sans;
 }
 
-.form-button {
-  padding-bottom: 8px;
-}
 
 
 /** Errors / Success ============**/
 
-div.wpcf7-response-output {
-  @include font-size(14px);
-  @include line-height(20px);
-  margin: 12px 0 0;
-  padding: 12px 16px;
-  border: none;
-  color: #fff;
-}
-
-input.wpcf7-not-valid {
-  border-color: $red;
-}
-
-span.wpcf7-not-valid-tip {
-  background: #fff;
-  color: $red;
-  font-size: 13px;
-  text-align: left;
-}
-
-.wpcf7-validation-errors {
-  background: $red;
-}
-
-.wpcf7-mail-sent-ok {
-  background: $green;
-}
-
-.ajax-loader {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.screen-reader-response {
+.ninja-forms-required-items,
+.ninja-forms-req-symbol {
   display: none;
 }
 
-/** Newsletter ============**/
-
-.form-newsletter input {
-  position: relative;
-  z-index: 10;
-  background: transparent;
+.ninja-forms-error-msg {
+  margin-bottom: $base;
+  padding: 12px;
+  background: #fff;
+  border: 1px solid $red;
+  color: $red;
+  text-align: left;
 }
+
+.ninja-forms-field-error p {
+  @include font-size(13px);
+  color: $red;
+}
+
 

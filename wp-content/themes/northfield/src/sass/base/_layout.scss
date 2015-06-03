@@ -31,9 +31,23 @@ body {
   }
 }
 
+.main {
+  border-top: 2px solid $lt-grey;
+}
 
-.page-template-default .body {
-  @include width-8-col;
+.main-content {
+  @include bp-min-width($medium) {
+    float: left;
+    width: 66.666%;
+    padding-right: 40px;
+  }
+}
+
+.sidebar-right {
+  @include bp-min-width($medium) {
+    float: right;
+    width: 33.333%;
+  }
 }
 
 .mobile-visible {

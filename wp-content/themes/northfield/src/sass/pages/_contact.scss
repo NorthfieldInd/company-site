@@ -1,1 +1,26 @@
 
+.widget h3 {
+  margin-bottom: 12px;
+  color: $black;
+}
+
+.widget-contact-info {
+  margin-bottom: $base;
+  padding-bottom: $base;
+  border-bottom: 4px solid $lt-grey;
+}
+
+.widget-contact-info li:not(:last-child) {
+  margin-bottom: $base;
+}
+
+.widget-catalog p:first-of-type {
+  max-width: 360px;
+  margin-bottom: $base;
+}
+
+.widget-catalog a {
+  @include btn;
+  @include btn-white-blue;
+  @include btn-border-blue;
+}

@@ -14,11 +14,6 @@
 	// Scripts & Styles (based on twentythirteen: http://make.wordpress.org/core/tag/twentythirteen/)
 	function northfield_scripts_styles() {
 		global $wp_styles;
-
-		// Load IE Stylesheet.
-//		wp_enqueue_style( 'stadtler-ie', get_template_directory_uri() . '/css/ie.css', array( 'stadtler-style' ), '20130213' );
-//		$wp_styles->add_data( 'stadtler-ie', 'conditional', 'lt IE 9' );
-
 	}
 	add_action( 'wp_enqueue_scripts', 'northfield_scripts_styles' );
 
@@ -86,6 +81,18 @@
   	register_post_type( 'projects' , $args );
   }
   
+  // Register Sidebar
+  function northfield_widgets_init() {
+  	register_sidebar( array(
+  		'name'          => __( 'Sidebar Right', 'northfield' ),
+  		'id'            => 'sidebar-right',
+  		'description'   => __( 'Add widgets here to appear in your sidebar.', 'northfield' ),
+  		'before_title'  => '<h3 class="widget-title">',
+  		'after_title'   => '</h3>',
+  	) );
+  }
+  add_action( 'widgets_init', 'northfield_widgets_init' );
+
 	// WP Title (based on twentythirteen: http://make.wordpress.org/core/tag/twentythirteen/)
 	function northfield_wp_title( $title, $sep ) {
 		global $paged, $page;
