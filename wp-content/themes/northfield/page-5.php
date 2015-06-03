@@ -25,7 +25,7 @@
   	</section>
 
   	<section class="solutions-section-2">
-  	  <div class="table-row">
+  	  <div class="table-row table-row-col-image-left">
   			<div class="col-1-2 col-image">
   			  <div class="icon">
             <svg class="icon-boxes"><use xlink:href="#icon-boxes" /></svg>
@@ -51,7 +51,7 @@
   	</section>
 
   	<section class="solutions-section-4">
-  	  <div class="table-row">
+  	  <div class="table-row table-row-col-image-left">
   			<div class="col-1-2 col-image">
   			  <div class="icon">
             <svg class="icon-time"><use xlink:href="#icon-time" /></svg>

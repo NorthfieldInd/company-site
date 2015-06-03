@@ -180,7 +180,7 @@
   display: inline-block;
 
   @include bp-min-width($xsmall) {
-    max-width: 150px;
+    max-width: 160px;
   }
 }
 

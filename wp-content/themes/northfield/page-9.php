@@ -19,7 +19,7 @@
   	</section>
 
   	<section class="capabilities-section-2">
-  	  <div class="table-row">
+  	  <div class="table-row table-row-col-image-left">
   			<div class="col-1-2 col-image">
   			</div>
   			<div class="col-1-2 col-content">

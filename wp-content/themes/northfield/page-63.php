@@ -19,7 +19,7 @@
   	</section>
 
   	<section class="fast-track-section-2">
-  	  <div class="table-row">
+  	  <div class="table-row table-row-col-image-left">
   			<div class="col-1-2 col-image">
   			</div>
   			<div class="col-1-2 col-content">
@@ -33,7 +33,7 @@
   			<div class="col-1-2 col-content">
   			  <?php the_field('fast_content_section_3'); ?>
   			  <h4>Download Forms</h4>
-  			  <ul>
+  			  <ul class="forms-list">
   			    <li><a href="<?php the_field('fast_quote_form'); ?>"><svg class="icon-file"><use xlink:href="#icon-file" /></svg> Quote Form</a></li>
   			    <li><a href="<?php the_field('fast_credit_application_form'); ?>"><svg class="icon-file"><use xlink:href="#icon-file" /></svg> Credit Application Form</a></li>
   			    <li><a href="<?php the_field('fast_tax_form'); ?>"><svg class="icon-file"><use xlink:href="#icon-file" /></svg> Tax Form</a></li>

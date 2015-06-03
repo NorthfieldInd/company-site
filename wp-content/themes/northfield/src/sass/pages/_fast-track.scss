@@ -1,10 +1,9 @@
 
 [class^="fast-track-section-"] .col-content {
-  @include bp-min-width($medium) {
+  @include bp-min-width($large) {
     height: $base*26;
   }
 }
-
 
 .fast-track-section-1 .col-image {
   background: $blue;
@@ -75,6 +74,13 @@
   width: 200px;
 }
 
+.fast-track-section-3 li:nth-child(3) {
+  clear: left;
+}
+
+.forms-list {
+  @include cf;
+}
 
 
 
