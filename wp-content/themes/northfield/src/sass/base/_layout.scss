@@ -36,6 +36,10 @@ body {
 }
 
 .main-content {
+  @include bp-max-width($medium) {
+    margin-bottom: $base*2;
+  }
+
   @include bp-min-width($medium) {
     float: left;
     width: 66.666%;
@@ -51,9 +55,17 @@ body {
 }
 
 .mobile-visible {
-  visibility: visible;
+  display: none;
+
+  @include bp-max-width($medium) {
+    display: block;
+    visibility: visible;
+  }
 }
 
 .mobile-hidden {
-  visibility: hidden;
+  @include bp-max-width($medium) {
+    display: none;
+    visibility: hidden;
+  }
 }

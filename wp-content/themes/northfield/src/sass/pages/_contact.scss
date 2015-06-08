@@ -4,19 +4,55 @@
   color: $black;
 }
 
+.widget-map {
+  margin-bottom: $base;
+}
+
 .widget-contact-info {
   margin-bottom: $base;
-  padding-bottom: $base;
+  padding-bottom: $base*1.5;
   border-bottom: 4px solid $lt-grey;
 }
 
-.widget-contact-info li:not(:last-child) {
+.contact-info {
+  @include bp-max-width($medium) {
+    margin-bottom: $base;
+  }
+}
+
+.contact-info li {
+  position: relative;
+  padding-left: 40px;
+}
+
+.contact-info .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contact-info li:not(:last-child) {
   margin-bottom: $base;
 }
 
+.contact-info a {
+  color: $grey;
+  
+  &:hover {
+    color: $blue;
+  }
+}
+
+.contact-email {
+  word-wrap: break-word;
+}
+
 .widget-catalog p:first-of-type {
-  max-width: 360px;
   margin-bottom: $base;
+
+  @include bp-min-width($medium) {
+    max-width: 360px;
+  }
 }
 
 .widget-catalog a {

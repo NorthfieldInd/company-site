@@ -54,6 +54,7 @@ textarea:focus {
 textarea {
   overflow: auto;
   width: 100%;
+  max-width: 584px;
   height: $base*4;
   resize: none;
   
