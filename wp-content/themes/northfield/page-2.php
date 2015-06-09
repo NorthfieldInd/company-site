@@ -28,12 +28,21 @@
 		    <div class="row">
   		    <div class="col-1-3">
       			<?php the_field('home_product_block_1'); ?>
+      			<div class="product-image">
+      			  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/home-hub-spindles.jpg" alt="Hubs and Spindles">
+      			</div>
   		    </div>
   		    <div class="col-1-3">
       			<?php the_field('home_product_block_2'); ?>
+      			<div class="product-image">
+      			  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/home-machining.jpg" alt="Machining">
+      			</div>
   		    </div>
   		    <div class="col-1-3">
       			<?php the_field('home_product_block_3'); ?>
+      			<div class="product-image">
+      			  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/home-jacks.jpg" alt="Jacks">
+      			</div>
   		    </div>
 		    </div>
 		  

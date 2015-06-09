@@ -22,6 +22,7 @@
 }
 
 .home-products .wrapper {
+  max-width: none;
   padding: $base*2 0;
 }
 
@@ -36,6 +37,10 @@
 .home-products p {
   @include line-height(22px);
   margin-bottom: $base;
+}
+
+.home-products .product-image {
+  text-align: center;
 }
 
 .home-products .col-1-3:nth-child(1) {

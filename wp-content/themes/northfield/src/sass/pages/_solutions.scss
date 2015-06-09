@@ -11,10 +11,15 @@
 
 .hero-solutions .logo-total-solutions {
   display: inline-block;
-  width: 581px;
+  width: 320px;
+  height: 30px;
   max-width: 100%;
-  height: 81px;
   fill: #fff;
+
+  @include bp-min-width($medium) {
+    width: 581px;
+    height: 81px;
+  }
 }
 
 [class^="solutions-section-"] h2 {
@@ -33,6 +38,13 @@
 
 [class^="solutions-section-"] .col-image .icon {
   @include absolute-center;
+  width: 80%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+[class^="solutions-section-"] [class^="icon-"] {
+  max-width: 100%;
 }
 
 .solutions-section-1 .col-image {
