@@ -1,11 +1,27 @@
 
 $img-url: '/wp-content/themes/northfield/dist/images/';
 
+$bg-bottom: url("#{$img-url}bg-bottom.jpg");
+
 $hero-home-01: url("#{$img-url}hero-home-01.jpg");
 $hero-home-02: url("#{$img-url}hero-home-02.jpg");
 $hero-home-03: url("#{$img-url}hero-home-03.jpg");
 
-$bg-bottom: url("#{$img-url}bg-bottom.jpg");
-
 $bg-home-solutions: url("#{$img-url}bg-home-solutions.jpg");
 $bg-home-bottom: url("#{$img-url}bg-home-bottom.jpg");
+
+$hero-capabilities: url("#{$img-url}hero-capabilities.jpg");
+
+$capabilities-01: url("#{$img-url}capabilities-01.jpg");
+$capabilities-02: url("#{$img-url}capabilities-02.jpg");
+$capabilities-03: url("#{$img-url}capabilities-03.jpg");
+
+$capabilities-map-usa: url("#{$img-url}capabilities-map-usa.jpg");
+$capabilities-map-china: url("#{$img-url}capabilities-map-china.jpg");
+
+$hero-hubs-spindles: url("#{$img-url}hero-hubs-spindles.jpg");
+
+$product-hubs-01: url("#{$img-url}product-hubs-01.jpg");
+$product-hubs-02: url("#{$img-url}product-hubs-02.jpg");
+$product-hubs-03: url("#{$img-url}product-hubs-03.jpg");
+$product-hubs-04: url("#{$img-url}product-hubs-04.jpg");

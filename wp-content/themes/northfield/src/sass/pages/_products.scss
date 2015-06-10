@@ -1,4 +1,9 @@
 
+.hero-products {
+  background: $dk-grey no-repeat center center;
+  background-size: cover;
+}
+
 .products-nav li {
   @include bp-min-width($large) {
     float: left;

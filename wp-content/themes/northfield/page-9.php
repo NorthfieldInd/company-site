@@ -2,7 +2,7 @@
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-  	<section class="hero">
+  	<section class="hero hero-capabilities">
   	  <div class="wrapper">
   			<h1><?php the_field('cap_hero_title'); ?></h1>
   	  </div>
@@ -40,6 +40,8 @@
   	
   	<section class="capabilities-maps">
   	  <h2 class="section-title">Worldwide Manufacturing Capabilities</h2>
+  	  <div class="map-usa"></div>
+  	  <div class="map-china"></div>
   	</section>
 
   	<section class="bottom-section">

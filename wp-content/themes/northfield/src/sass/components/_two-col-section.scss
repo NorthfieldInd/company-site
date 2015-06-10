@@ -4,7 +4,7 @@
   vertical-align: middle;
 
   @include bp-min-width($large) {
-    height: $base*20;
+    height: $base*25;
   }
 }
 

@@ -79,7 +79,7 @@
   padding: $base 0;
 
   @include bp-min-width($medium) {
-    padding: $base*4 0;
+    padding: $base*6 0;
   }
 }
 
@@ -276,15 +276,15 @@
   }
 }
 
-.home-bottom-section {
+.home-bottom-section.bottom-section {
   @include bp-min-width($medium) {
-    padding: $base*4 0;
+    padding: $base*7 0;
     background: $grey $bg-home-bottom no-repeat center center;
     background-size: cover;
   }
 }
 
-.home-bottom-section .wrapper {
+.home-bottom-section.bottom-section .wrapper {
   background: $red;
 }
 

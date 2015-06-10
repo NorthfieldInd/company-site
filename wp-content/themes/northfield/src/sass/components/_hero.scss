@@ -1,7 +1,6 @@
 
 .hero {
   position: relative;
-  background: $grey;
 
   @include bp-min-width($medium) {
     height: 600px;
@@ -19,4 +18,8 @@
 .hero h1,
 .hero p {
   color: #fff;
+}
+
+.hero h1 {
+  max-width: 900px;
 }

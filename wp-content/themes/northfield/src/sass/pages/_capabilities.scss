@@ -1,7 +1,12 @@
 
+.hero-capabilities {
+  background: $dk-grey $hero-capabilities no-repeat center center;
+  background-size: cover;
+}
 
 .capabilities-section-1 .col-image {
-  background: $blue;
+  background: $blue $capabilities-01 no-repeat center center;
+  background-size: cover;
 }
 
 .capabilities-section-1 h2 {
@@ -20,7 +25,8 @@
 }
 
 .capabilities-section-2 .col-image {
-  background: $green;
+  background: $green $capabilities-02 no-repeat center center;
+  background-size: cover;
 }
 
 .capabilities-section-2 h2 {
@@ -28,7 +34,8 @@
 }
 
 .capabilities-section-3 .col-image {
-  background: $red;
+  background: $red $capabilities-03 no-repeat center center;
+  background-size: cover;
 }
 
 .capabilities-section-3 h2 {
@@ -36,16 +43,12 @@
 }
 
 .capabilities-maps {
+  @include cf;
   position: relative;
-  height: 440px;
   background: $lt-grey;
 }
 
 .capabilities-maps .section-title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   padding: $base*1.25 0;
   background: rgba($blue, 0.8);
   color: #fff;
@@ -54,5 +57,34 @@
   @include bp-min-width($medium) {
     @include font-size(38px);
     @include line-height(46px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
   }
 }
+
+.capabilities-maps [class^="map-"] {
+  height: 300px;
+
+  @include bp-min-width($medium) {
+    float: left;
+    width: 50%;
+    height: $base*20;
+  }
+
+  @include bp-min-width($large) {
+    height: $base*25;
+  }
+}
+
+.map-usa {
+  background: $capabilities-map-usa no-repeat center bottom;
+  background-size: cover;
+}
+
+.map-china {
+  background: $capabilities-map-china no-repeat center bottom;
+  background-size: cover;
+}
+

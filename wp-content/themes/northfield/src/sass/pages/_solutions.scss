@@ -1,4 +1,9 @@
 
+.hero-solutions {
+  background: $dk-grey no-repeat center center;
+  background-size: cover;
+}
+
 .hero.hero-solutions .wrapper {
   @include bp-min-width($medium) {
     padding-top: $base*4;

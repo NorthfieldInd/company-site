@@ -1,0 +1,120 @@
+
+.postid-73 .hero-single-product {
+  background: $dk-grey $hero-hubs-spindles no-repeat center center;
+  background-size: cover;
+}
+
+.postid-75 .hero-single-product {
+  background: $dk-grey no-repeat center center;
+  background-size: cover;
+}
+
+.postid-76 .hero-single-product {
+  background: $dk-grey no-repeat center center;
+  background-size: cover;
+}
+
+.single-product-section-1 h2 {
+  color: $green;
+}
+
+.single-product-section-1 .col-image {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.single-product-section-2 {
+  background: $lt-blue;
+}
+
+.single-product-section-2 h2,
+.single-product-section-2 p {
+  color: #fff;
+}
+
+.single-product-section-2 .col-image {
+  background: $product-hubs-02 no-repeat center center;
+  background-size: cover;
+}
+
+.single-product-section-3 {
+  background: $lt-grey;
+}
+
+.single-product-section-3 .col-image {
+  background: $product-hubs-03 no-repeat center center;
+  background-size: cover;
+}
+
+.single-product-section-4 {
+  background: $lt-green;
+}
+
+.single-product-section-4 .col-image {
+  background: $product-hubs-04 no-repeat center center;
+  background-size: cover;
+}
+
+.single-product-section-4 h2,
+.single-product-section-4 p {
+  color: #fff;
+}
+
+[class^="single-product-section-"] p:not(:last-child) {
+  margin-bottom: $base;
+}
+
+[class^="single-product-section-"] li {
+  margin-bottom: $base;
+
+  @include bp-min-width($small) {
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+[class^="single-product-section-"] a {
+  @include btn;
+  @include btn-white-green;
+  @include btn-border-green;
+}
+
+.single-product-nav li {
+  display: inline-block;
+  margin: 0 10px 10px;
+}
+
+.single-product-nav .item-hubs-spindles a {
+  color: $green;
+}
+
+.single-product-nav .item-machining a {
+  color: $blue;
+}
+
+.single-product-nav .item-jacks a {
+  color: $red;
+}
+
+.single-product-nav {
+  @include font-size(21px);
+  display: block;
+  padding: $base*2 0;
+  text-align: center;
+  font-family: $gridnik;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  @include bp-min-width($xlarge) {
+    @include font-size(28px);
+  }
+}
+
+.single-product-nav .caret {
+  @include font-size(30px);
+
+  @include bp-min-width($xlarge) {
+    @include font-size(40px);
+  }
+}
+

@@ -45,22 +45,22 @@
   		'hierarchical' => false,
   		'menu_position' => null,
   		'supports' => array('title','editor','thumbnail')
-  	  ); 
+	  );
   	register_post_type( 'testimonials' , $args );
   }
   
-  // Projects Post Type
-	add_action('init', 'projects_register');
-  function projects_register() {
+  // Products Post Type
+	add_action('init', 'products_register');
+  function products_register() {
   	$labels = array(
-  		'name' => _x('Projects', 'post type general name'),
-  		'singular_name' => _x('Projects Item', 'post type singular name'),
-  		'add_new' => _x('Add New', 'Projects Item'),
-  		'add_new_item' => __('Add New Projects Item'),
-  		'edit_item' => __('Edit Projects Item'),
-  		'new_item' => __('New Projects Item'),
-  		'view_item' => __('View Projects Item'),
-  		'search_items' => __('Search Projects'),
+  		'name' => _x('Products', 'post type general name'),
+  		'singular_name' => _x('Products Item', 'post type singular name'),
+  		'add_new' => _x('Add New', 'Products Item'),
+  		'add_new_item' => __('Add New Products Item'),
+  		'edit_item' => __('Edit Products Item'),
+  		'new_item' => __('New Products Item'),
+  		'view_item' => __('View Products Item'),
+  		'search_items' => __('Search Products'),
   		'not_found' =>  __('Nothing found'),
   		'not_found_in_trash' => __('Nothing found in Trash'),
   		'parent_item_colon' => ''
@@ -71,14 +71,47 @@
   		'publicly_queryable' => true,
   		'show_ui' => true,
   		'query_var' => true,
-  		'menu_icon' => 'dashicons-carrot',
+  		'menu_icon' => 'dashicons-hammer',
+  		'rewrite' => true,
+  		'capability_type' => 'post',
+  		'hierarchical' => false,
+  		'menu_position' => null,
+  		'supports' => array('title','editor','thumbnail'),
+  		'has_archive' => false
+	  );
+  	register_post_type( 'products' , $args );
+  }
+
+  // Products Post Type
+	add_action('init', 'gallery_register');
+  function gallery_register() {
+  	$labels = array(
+  		'name' => _x('Gallery', 'post type general name'),
+  		'singular_name' => _x('Gallery Item', 'post type singular name'),
+  		'add_new' => _x('Add New', 'Gallery Item'),
+  		'add_new_item' => __('Add New Gallery Item'),
+  		'edit_item' => __('Edit Gallery Item'),
+  		'new_item' => __('New Gallery Item'),
+  		'view_item' => __('View Gallery Item'),
+  		'search_items' => __('Search Gallery'),
+  		'not_found' =>  __('Nothing found'),
+  		'not_found_in_trash' => __('Nothing found in Trash'),
+  		'parent_item_colon' => ''
+  	);
+  	$args = array(
+  		'labels' => $labels,
+  		'public' => true,
+  		'publicly_queryable' => true,
+  		'show_ui' => true,
+  		'query_var' => true,
+  		'menu_icon' => 'dashicons-slides',
   		'rewrite' => true,
   		'capability_type' => 'post',
   		'hierarchical' => false,
   		'menu_position' => null,
   		'supports' => array('title','editor','thumbnail')
-  	  ); 
-  	register_post_type( 'projects' , $args );
+	  );
+  	register_post_type( 'gallery' , $args );
   }
   
   // Register Sidebar
@@ -89,7 +122,7 @@
   		'description'   => __( 'Add widgets here to appear in your sidebar.', 'northfield' ),
   		'before_title'  => '<h3 class="widget-title">',
   		'after_title'   => '</h3>',
-  	) );
+  	));
   }
   add_action( 'widgets_init', 'northfield_widgets_init' );
 
