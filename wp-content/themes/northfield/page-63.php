@@ -2,7 +2,7 @@
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-  	<section class="hero">
+  	<section class="hero hero-fast-track">
   	  <div class="wrapper">
   			<h1><?php the_field('fast_hero_title'); ?></h1>
   	  </div>

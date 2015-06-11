@@ -1,4 +1,9 @@
 
+.hero-fast-track {
+  background: $dk-grey $hero-fast-track no-repeat center center;
+  background-size: cover;
+}
+
 [class^="fast-track-section-"] .col-content {
   @include bp-min-width($large) {
     height: $base*26;
@@ -6,7 +11,8 @@
 }
 
 .fast-track-section-1 .col-image {
-  background: $blue;
+  background: $blue $fast-track-01 no-repeat center center;
+  background-size: cover;
 }
 
 .fast-track-section-1 h2 {
@@ -26,7 +32,8 @@
 }
 
 .fast-track-section-2 .col-image {
-  background: $green;
+  background: $green $fast-track-02 no-repeat center center;
+  background-size: cover;
 }
 
 .fast-track-section-2 h2 {
@@ -34,7 +41,8 @@
 }
 
 .fast-track-section-3 .col-image {
-  background: $red;
+  background: $red $fast-track-03 no-repeat center center;
+  background-size: cover;
 }
 
 .fast-track-section-3 h2 {
