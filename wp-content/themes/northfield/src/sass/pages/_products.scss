@@ -100,3 +100,8 @@
   @include btn-white-green;
   @include btn-border-green;
 }
+
+[class^="products-section-"] .tablet-image {
+  padding: $base*2 5% 0;
+  text-align: center;
+}

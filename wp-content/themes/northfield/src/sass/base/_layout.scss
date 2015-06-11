@@ -69,3 +69,17 @@ body {
     visibility: hidden;
   }
 }
+
+.tablet-visible {
+  display: none;
+
+  @include bp-max-width($large) {
+    display: block;
+  }
+}
+
+.tablet-hidden {
+  @include bp-max-width($large) {
+    display: none;
+  }
+}

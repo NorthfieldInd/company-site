@@ -1,5 +1,6 @@
 
 .col-content {
+  @include cf;
   padding: $base*2 5%;
   vertical-align: middle;
 
@@ -9,6 +10,9 @@
 }
 
 .col-image {
+  vertical-align: middle;
+  text-align: center;
+
   @include bp-max-width($large) {
     height: 300px;
   }
