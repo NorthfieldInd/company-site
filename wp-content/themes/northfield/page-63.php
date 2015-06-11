@@ -47,7 +47,7 @@
 
   	<section class="bottom-section">
   	  <div class="wrapper">
-			  <?php // the_field('fast_bottom_section'); ?>
+			  <?php the_field('prod_bottom_section', 7); ?>
   	  </div>
   	</section>
 
