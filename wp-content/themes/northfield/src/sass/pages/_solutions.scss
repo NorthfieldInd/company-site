@@ -1,6 +1,6 @@
 
 .hero-solutions {
-  background: $dk-grey no-repeat center center;
+  background: $dk-grey $hero-solutions no-repeat center center;
   background-size: cover;
 }
 
@@ -53,23 +53,28 @@
 }
 
 .solutions-section-1 .col-image {
-  background: $blue;
+  background: $blue $solutions-01 no-repeat center center;
+  background-size: cover;
 }
 
 .solutions-section-2 .col-image {
-  background: $red;
+  background: $red $solutions-02 no-repeat center center;
+  background-size: cover;
 }
 
 .solutions-section-3 .col-image {
-  background: $green;
+  background: $green $solutions-03 no-repeat center center;
+  background-size: cover;
 }
 
 .solutions-section-4 .col-image {
-  background: $blue;
+  background: $blue $solutions-04 no-repeat center top;
+  background-size: cover;
 }
 
 .solutions-section-5 .col-image {
-  background: $red;
+  background: $dk-grey $solutions-05 no-repeat center bottom;
+  background-size: cover;
 }
 
 .solutions-section-5 p {
