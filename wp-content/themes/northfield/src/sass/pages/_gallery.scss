@@ -19,11 +19,17 @@
   width: 37px;
   height: 46px;
   margin-left: 3px;
+
+  @include bp-max-width($large) {
+    transform: rotate(90deg);
+    margin-left: 0;
+    margin-top: -16px;
+  }
 }
 
 
 [class^="gallery-section-"] {
-  padding: $base*2 0;
+  padding-top: $base*2;
 }
 
 [class^="gallery-section-"] h2 {
