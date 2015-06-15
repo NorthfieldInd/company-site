@@ -131,5 +131,10 @@
     </g>
   </symbol>
 
+  <symbol id="icon-arrow-gallery" viewBox="0 0 26 33.104">
+    <polygon fill="#43B649" points="0,0 0,16.551 0,33.103 26,16.551 "/>
+    <polygon fill="#2F8741" points="0,16.551 0,33.104 26,16.551 "/>
+  </symbol>
+
 </svg>
 
