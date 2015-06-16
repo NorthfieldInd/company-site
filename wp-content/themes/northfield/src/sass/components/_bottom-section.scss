@@ -54,4 +54,8 @@
 .bottom-section li:nth-child(2) a {
   @include btn;
   @include btn-border-white;
+  
+  &:hover {
+    color: $lt-blue;
+  }
 }

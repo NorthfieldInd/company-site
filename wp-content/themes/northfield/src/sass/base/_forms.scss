@@ -173,7 +173,6 @@ textarea {
 /** Buttons ============**/
 
 .ninja-forms-form-wrap input[type="submit"] {
-	@include global-transition;
   @include btn;
   @include btn-lt-blue;
 	min-width: 120px;

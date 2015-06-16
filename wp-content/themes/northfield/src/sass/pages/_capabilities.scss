@@ -42,6 +42,12 @@
   color: $red;
 }
 
+.capabilities-section-3 a {
+  @include btn;
+  @include btn-white-red;
+  @include btn-border-red;
+}
+
 .capabilities-maps {
   @include cf;
   position: relative;

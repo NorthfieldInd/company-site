@@ -1,6 +1,6 @@
 
 svg {
-  @include global-transition;
+  @include global-transition(0.1s);
 }
 
 svg:not(:root) {

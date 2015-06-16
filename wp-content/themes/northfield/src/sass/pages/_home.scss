@@ -49,7 +49,7 @@
   }
   
   a {
-    background: $green;
+    @include btn-green;
   }
 }
 
@@ -59,7 +59,7 @@
   }
 
   a {
-    background: $blue;
+    @include btn-blue;
   }
 }
 
@@ -69,7 +69,7 @@
   }
   
   a {
-    background: $red;
+    @include btn-red;
   }
 }
 
@@ -125,7 +125,7 @@
   }
 
   @include bp-min-width($medium) {
-    margin-right: 30px;
+    margin-right: 46px;
   }
 
   &:after {
@@ -133,10 +133,10 @@
       content: "";
       display: block;
       position: absolute;
-      top: 6px;
-      right: -20px;
+      top: 4px;
+      right: -31px;
       width: 2px;
-      height: 40px;
+      height: 50px;
       background: $lt-blue;
     }
   }
@@ -291,3 +291,8 @@
 .home-bottom-section.bottom-section li:nth-child(1) a {
   @include btn-white-red;
 }
+
+.home-bottom-section.bottom-section li:nth-child(2) a:hover {
+  color: $red;
+}
+

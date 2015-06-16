@@ -51,8 +51,8 @@
 }
 
 // GLOBAL TRANSITION
-@mixin global-transition {
-	transition: all 0.15s ease-in;
+@mixin global-transition($speed) {
+	transition: all $speed ease-in;
 }
 
 
