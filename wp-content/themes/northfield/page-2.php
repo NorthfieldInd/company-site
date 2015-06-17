@@ -97,8 +97,8 @@
         </ul>
         
         <ul class="home-solutions-links">
-          <li><a href="" class="btn">Learn More</a></li>
-          <li><a href="" class="btn">Fast Track</a></li>
+          <li><a href="/solutions/" class="btn">Learn More</a></li>
+          <li><a href="/fast-track/" class="btn">Fast Track</a></li>
         </ul>
         
 		  </div>
