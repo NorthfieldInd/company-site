@@ -16,6 +16,7 @@
 
 .icon-arrow-gallery {
   @include absolute-center;
+  z-index: 100;
   width: 37px;
   height: 46px;
   margin-left: 3px;
@@ -27,6 +28,29 @@
   }
 }
 
+.postid-78 .dark-half {
+  fill: $green;
+}
+
+.postid-78 .light-half {
+  fill: $lt-green;
+}
+
+.postid-79 .dark-half {
+  fill: $blue;
+}
+
+.postid-79 .light-half {
+  fill: $lt-blue;
+}
+
+.postid-80 .dark-half {
+  fill: $dk-red;
+}
+
+.postid-80 .light-half {
+  fill: $red;
+}
 
 [class^="gallery-section-"] {
   padding-top: $base*2;
@@ -66,8 +90,11 @@
 }
 
 .col-gallery-images {
+  overflow: hidden;
+
   @include bp-min-width($large) {
     padding-left: 40px;
   }
 }
+
 
