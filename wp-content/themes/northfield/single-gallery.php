@@ -15,19 +15,19 @@
   			  <?php if (is_single(78)) { ?>
   			    <img src="<?php echo get_template_directory_uri(); ?>/dist/images/gallery-hubs-product-01.jpg" alt="Hubs and Spindles">
   			  <?php } elseif (is_single(79)) { ?>
-  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-fpo.jpg" alt="Hubs and Spindles">
+  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-machining-product-01.jpg" alt="Machining">
   			  <?php } elseif (is_single(80)) { ?>
-  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-fpo.jpg" alt="Hubs and Spindles">
+  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-jacks-product-01.jpg" alt="Jacks">
   			  <?php } ?>
   			</div>
   			<svg class="icon-arrow-gallery"><use xlink:href="#icon-arrow-gallery" /></svg>
   			<div class="col-gallery-images">
   			  <?php if (is_single(78)) { ?>
-  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-fpo.jpg" alt="Hubs and Spindles">
+  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-hubs-app-01.jpg" alt="Hubs and Spindles">
   			  <?php } elseif (is_single(79)) { ?>
-  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-fpo.jpg" alt="Hubs and Spindles">
+  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-machining-app-01.jpg" alt="Machining">
   			  <?php } elseif (is_single(80)) { ?>
-  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-fpo.jpg" alt="Hubs and Spindles">
+  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-jacks-app-01.jpg" alt="Jacks">
   			  <?php } ?>
   			</div>
   	  </div>
@@ -40,24 +40,25 @@
   			  <?php if (is_single(78)) { ?>
   			    <img src="<?php echo get_template_directory_uri(); ?>/dist/images/gallery-hubs-product-02.jpg" alt="Hubs and Spindles">
   			  <?php } elseif (is_single(79)) { ?>
-  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-fpo.jpg" alt="Hubs and Spindles">
+  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-machining-product-02.jpg" alt="Machining">
   			  <?php } elseif (is_single(80)) { ?>
-  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-fpo.jpg" alt="Hubs and Spindles">
+  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-jacks-product-02.jpg" alt="Jacks">
   			  <?php } ?>
   			</div>
   			<svg class="icon-arrow-gallery"><use xlink:href="#icon-arrow-gallery" /></svg>
   			<div class="col-gallery-images">
   			  <?php if (is_single(78)) { ?>
-  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-fpo.jpg" alt="Hubs and Spindles">
+  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-hubs-app-04.jpg" alt="Hubs and Spindles">
   			  <?php } elseif (is_single(79)) { ?>
-  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-fpo.jpg" alt="Hubs and Spindles">
+  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-machining-app-02.jpg" alt="Machining">
   			  <?php } elseif (is_single(80)) { ?>
-  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-fpo.jpg" alt="Hubs and Spindles">
+  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-jacks-app-02.jpg" alt="Jacks">
   			  <?php } ?>
   			</div>
   	  </div>
   	</section>
 
+    <?php if (is_single(78) || is_single(79)) { ?>
   	<section class="gallery-section-3">
   	  <h2><?php the_field('product_title_3'); ?></h2>
   	  <div class="gallery-row">
@@ -65,23 +66,20 @@
   			  <?php if (is_single(78)) { ?>
   			    <img src="<?php echo get_template_directory_uri(); ?>/dist/images/gallery-hubs-product-03.jpg" alt="Hubs and Spindles">
   			  <?php } elseif (is_single(79)) { ?>
-  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-fpo.jpg" alt="Hubs and Spindles">
-  			  <?php } elseif (is_single(80)) { ?>
-  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-fpo.jpg" alt="Hubs and Spindles">
+  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-machining-product-03.jpg" alt="Machining">
   			  <?php } ?>
   			</div>
   			<svg class="icon-arrow-gallery"><use xlink:href="#icon-arrow-gallery" /></svg>
   			<div class="col-gallery-images">
   			  <?php if (is_single(78)) { ?>
-  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-fpo.jpg" alt="Hubs and Spindles">
+  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-hubs-app-05.jpg" alt="Hubs and Spindles">
   			  <?php } elseif (is_single(79)) { ?>
-  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-fpo.jpg" alt="Hubs and Spindles">
-  			  <?php } elseif (is_single(80)) { ?>
-  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-fpo.jpg" alt="Hubs and Spindles">
+  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-hubs-app-05.jpg" alt="Machining">
   			  <?php } ?>
   			</div>
   	  </div>
   	</section>
+  	<?php } ?>
 
   	<nav class="single-product-nav">
   	  <ul>
