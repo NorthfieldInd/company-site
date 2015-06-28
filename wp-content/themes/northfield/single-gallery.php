@@ -23,7 +23,11 @@
   			<svg class="icon-arrow-gallery"><use xlink:href="#icon-arrow-gallery" /></svg>
   			<div class="col-gallery-images">
   			  <?php if (is_single(78)) { ?>
-  			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-hubs-app-01.jpg" alt="Hubs and Spindles">
+  			    <ul class="gallery-slider">
+  			      <li><img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-hubs-app-01.jpg" alt="Hubs and Spindles"></li>
+  			      <li><img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-hubs-app-02.jpg" alt="Hubs and Spindles"></li>
+  			      <li><img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-hubs-app-03.jpg" alt="Hubs and Spindles"></li>
+  			    </ul>
   			  <?php } elseif (is_single(79)) { ?>
   			    <img src="<?php echo get_template_directory_uri(); ?>/src/images/gallery-machining-app-01.jpg" alt="Machining">
   			  <?php } elseif (is_single(80)) { ?>

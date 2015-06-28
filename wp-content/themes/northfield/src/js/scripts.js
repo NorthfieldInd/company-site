@@ -30,6 +30,15 @@ $(function(){
     });
   }
 
+  gallerySlider = function() {
+    $('.gallery-slider').bxSlider({
+      mode: 'fade',
+      auto: true,
+      pause: 5000,
+      controls: false
+    });
+  }
+
   navScroll = function() {
     var navLink = $('#products-nav a');
   
@@ -55,6 +64,7 @@ $(function(){
   heroSlider();
   testimonialSlider();
   navScroll();
+  gallerySlider();
 
 });
 

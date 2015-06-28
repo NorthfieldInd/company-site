@@ -16,7 +16,8 @@
   -webkit-transform: translatez(0);
 }
 
-.home-hero .bx-controls {
+.home-hero .bx-controls,
+.col-gallery-images .bx-controls {
   position: absolute;
   left: 20px;
   bottom: 20px;
@@ -59,4 +60,17 @@
 
 .bx-next {
   float: right;
+}
+
+.col-gallery-images .bx-pager-item a {
+  display: block;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  text-indent: -9999em;
+  
+  &.active {
+    background: $green;
+  }
 }
