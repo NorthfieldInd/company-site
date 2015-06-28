@@ -114,8 +114,8 @@
   </symbol>
 
   <symbol id="icon-arrow-gallery" viewBox="0 0 26 33.104">
-    <polygon class="dark-half" points="0,0 0,16.551 0,33.103 26,16.551 "/>
-    <polygon class="light-half" points="0,16.551 0,33.104 26,16.551 "/>
+    <polygon class="light-half" points="0,0 0,16.551 0,33.103 26,16.551 "/>
+    <polygon class="dark-half" points="0,16.551 0,33.104 26,16.551 "/>
   </symbol>
 
   <symbol id="logo-total-solutions" viewBox="0 0 581 42.77">
