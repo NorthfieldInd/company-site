@@ -27,7 +27,13 @@
   		<header class="header">
   		  <div class="wrapper">
     			<div class="logo">
+  			  <?php if (is_single(78)) { ?>
+    			  <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo-hubs.svg" alt="Northfield Industries"></a>
+  			  <?php } elseif (is_single(80)) { ?>
+    			  <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo-jacks.svg" alt="Northfield Industries"></a>
+    			<?php } else { ?>
     			  <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo.svg" alt="Northfield Industries"></a>
+  			  <?php } ?>
           </div>
       		<nav class="main-nav">
             <a href="" class="btn-mobile">
