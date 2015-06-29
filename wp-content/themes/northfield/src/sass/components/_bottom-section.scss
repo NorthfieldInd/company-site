@@ -46,16 +46,7 @@
   }
 }
 
-.bottom-section li:nth-child(1) a {
+.bottom-section li a {
   @include btn;
   @include btn-white-lt-blue;
-}
-
-.bottom-section li:nth-child(2) a {
-  @include btn;
-  @include btn-border-white;
-  
-  &:hover {
-    color: $lt-blue;
-  }
 }

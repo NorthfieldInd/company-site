@@ -288,11 +288,7 @@
   background: $red;
 }
 
-.home-bottom-section.bottom-section li:nth-child(1) a {
+.home-bottom-section.bottom-section li a {
   @include btn-white-red;
-}
-
-.home-bottom-section.bottom-section li:nth-child(2) a:hover {
-  color: $red;
 }
 
