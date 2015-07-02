@@ -1,6 +1,6 @@
 
 var gulp = require('gulp'),
-    sass = require('gulp-ruby-sass'),
+    sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     sourcemaps = require('gulp-sourcemaps'),
     minifycss = require('gulp-minify-css'),
@@ -13,11 +13,6 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload;
 
-/*
-    watch = require('gulp-watch'),
-    batch = require('gulp-batch'),
-*/
-
 
 gulp.task('browser-sync', function() {
   browserSync({
@@ -25,24 +20,16 @@ gulp.task('browser-sync', function() {
     browser: 'google chrome'
   });
 });
-  
+
 
 gulp.task('sass', function() {
-  return sass('src/sass', {
-      check: true,
-      sourcemap: true,
-      style: 'expanded'
-    })
-    .on('error', function (err) {
-      console.error('Error!', err.message);
-    })
+  return gulp.src('./scss/*.scss')
+    .pipe(sourcemaps.init())
+      .pipe(sass())
     .pipe(sourcemaps.write())
     .pipe(autoprefixer('last 2 version'))
+    // .pipe(minifycss())
     .pipe(gulp.dest('./'))
-/*
-    .pipe(minifycss())
-    .pipe(gulp.dest('./'))
-*/
     .pipe(reload({stream:true}));
 });
 
@@ -77,7 +64,4 @@ gulp.task('watch', ['browser-sync'], function() {
   gulp.watch('src/js/**/*.js', ['scripts', 'bs-reload']);
   gulp.watch('src/images/*', ['images']);
 });
-
-
-
 
