@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			
+
 		<section class="hero home-hero">
 		  <div class="slider">
   		  <div class="slide slide-1">
@@ -24,18 +24,18 @@
 
 		<section class="home-products">
 		  <div class="wrapper">
-		  
+
 		    <div class="row">
   		    <div class="col-1-3">
       			<?php the_field('home_product_block_1'); ?>
       			<div class="product-image">
-      			  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/home-hub-spindles.jpg" alt="Hubs and Spindles">
+              <img src="<?php echo get_template_directory_uri(); ?>/dist/images/home-machining.jpg" alt="Machining">
       			</div>
   		    </div>
   		    <div class="col-1-3">
       			<?php the_field('home_product_block_2'); ?>
       			<div class="product-image">
-      			  <img src="<?php echo get_template_directory_uri(); ?>/dist/images/home-machining.jpg" alt="Machining">
+              <img src="<?php echo get_template_directory_uri(); ?>/dist/images/home-hub-spindles.jpg" alt="Hubs and Spindles">
       			</div>
   		    </div>
   		    <div class="col-1-3">
@@ -45,13 +45,13 @@
       			</div>
   		    </div>
 		    </div>
-		  
+
 		  </div>
 		</section>
-		
+
 		<section class="home-solutions">
 		  <div class="wrapper">
-		  
+
 		    <div class="home-solutions-logos">
 		      <div class="logo-northfield">
 		        <img src="<?php echo get_template_directory_uri(); ?>/src/images/logo.svg" alt="Northfield Industries">
@@ -60,9 +60,9 @@
 		        <svg class="logo-total-solutions"><use xlink:href="#logo-total-solutions" /></svg>
 		      </div>
 		    </div>
-		  
+
         <p class="home-solutions-content"><?php the_field('home_total_solutions'); ?></p>
-        
+
         <ul class="solutions-list">
           <li>
             <div class="icon">
@@ -95,19 +95,19 @@
             <h4>Fast Track On-Boarding</h4>
           </li>
         </ul>
-        
+
         <ul class="home-solutions-links">
           <li><a href="/solutions/" class="btn">Learn More</a></li>
           <li><a href="/fast-track/" class="btn">Fast Track</a></li>
         </ul>
-        
+
 		  </div>
 		</section>
 
 
 		<section class="home-testimonials">
 		  <div class="wrapper">
-		  
+
 		    <h2 class="section-title">Customer Testimonials</h2>
 
 		    <div class="testimonials-list slider">
@@ -122,17 +122,17 @@
           <?php endforeach;
           wp_reset_postdata();?>
 		    </div>
-		    
+
 		    <ul class="testimonials-logos">
 		      <li><img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo-unicarriers.png" alt=""></li>
 		      <li><img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo-cnh.png" alt=""></li>
 		      <li><img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo-vermeer.png" alt=""></li>
 		      <li><img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo-bush-hog.png" alt=""></li>
 		    </ul>
-		    
+
 		  </div>
 		</section>
-		
+
 		<section class="bottom-section home-bottom-section">
 		  <div class="wrapper">
 		    <?php the_field('home_bottom_section'); ?>
