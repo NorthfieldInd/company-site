@@ -8,7 +8,7 @@
   }
 }
 
-.main-nav .menu-menu-1-container {
+.main-nav .menu-main-menu-container {
   @include bp-max-width($large) {
     display: none;
     position: absolute;
@@ -35,6 +35,7 @@
 
 .main-nav li {
   @include bp-min-width($large) {
+    position: relative;
     float: left;
   }
 }
@@ -46,7 +47,6 @@
 }
 
 .main-nav li a {
-  @include global-transition(0.1s);
   @include font-size(17px);
   display: block;
   color: $blue;
@@ -54,13 +54,7 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
 
-  @include bp-min-width($large) {
-    padding-bottom: 4px;
-  }
-
   @include bp-max-width($large) {
-    padding: 16px 26px;
-    box-shadow: inset 0 0 1px 0 rgba(255,255,255,1);
     color: #fff;
     text-align: right;
   }
@@ -69,19 +63,105 @@
     @include bp-max-width($large) {
       color: #fff;
     }
-
-    @include bp-min-width($large) {
-      box-shadow: 0 4px 0 $blue;
-    }
   }
 }
 
-.main-nav .current-menu-item a {
+.main-nav li:not(:nth-child(2)) a {
+  @include bp-max-width($large) {
+    padding: 16px 26px;
+    box-shadow: inset 0 -1px 1px -1px rgba(255,255,255,1);
+  }
+}
+
+.main-nav li:nth-child(2) a {
+  @include bp-max-width($large) {
+    padding: 16px 26px 8px;
+  }
+}
+
+.main-nav .menu > li > a {
+  @include bp-min-width($large) {
+    padding-bottom: 4px;
+  }
+}
+
+.main-nav .menu > li:hover > a {
   @include bp-min-width($large) {
     box-shadow: 0 4px 0 $blue;
   }
 }
 
+
+.main-nav .current-menu-item > a,
+.main-nav .current-menu-parent > a {
+  @include bp-min-width($large) {
+    box-shadow: 0 4px 0 $blue;
+  }
+}
+
+/** Dropdown **/
+
+.sub-menu {
+  @include bp-min-width($large) {
+    display: none;
+    position: absolute;
+    top: 27px;
+    left: 0;
+    z-index: 20;
+    width: 260px;
+    padding-top: 5px;
+  }
+}
+
+.main-nav li li {
+  float: none;
+}
+
+.main-nav li li:not(:first-child) {
+  margin-left: 0;
+}
+
+.main-nav li:hover .sub-menu {
+  @include bp-min-width($large) {
+    display: block;
+  }
+}
+
+.main-nav .sub-menu li a {
+  padding: 8px 26px 0 26px;
+
+  @include bp-max-width($large) {
+    @include font-size(15px);
+    font-weight: $reg;
+  }
+
+  @include bp-min-width($large) {
+    display: block;
+    padding: 16px 26px;
+    background: $blue;
+    color: #fff;
+  }
+}
+
+.main-nav .sub-menu li:last-child a {
+  @include bp-max-width($large) {
+    padding-bottom: 16px;
+  }
+}
+
+.main-nav .sub-menu li:not(:last-child) a {
+  box-shadow: none;
+
+  @include bp-min-width($large) {
+    box-shadow: inset 0 -1px 1px -1px rgba(255,255,255,1);
+  }
+}
+
+.main-nav li .sub-menu  a:hover {
+  @include bp-min-width($large) {
+    background: $lt-blue;
+  }
+}
 
 /** Mobile Menu Button **/
 
@@ -94,11 +174,11 @@
   height: 100%;
   padding: 26px 26px 0;
   color: $dk-grey;
-  
+
   &.active {
     background: $lt-blue;
   }
-    
+
   @include bp-min-width($medium) {
     padding-top: 32px;
   }
@@ -125,11 +205,11 @@
   &:nth-child(1) {
     transform: rotate(0);
   }
-  
+
   &:nth-child(2) {
     transform: rotate(0);
   }
-  
+
   &:nth-child(3) {
     opacity: 1;
   }
@@ -140,15 +220,15 @@
   top: 8px;
   left: 0;
   background-color: #fff;
-  
+
   &:nth-child(1) {
     transform: rotate(45deg);
   }
-  
+
   &:nth-child(2) {
     transform: rotate(-45deg);
   }
-  
+
   &:nth-child(3) {
     opacity: 0;
   }

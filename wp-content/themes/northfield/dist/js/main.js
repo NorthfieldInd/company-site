@@ -102,14 +102,14 @@ $(function(){
 
   mobileNav = function() {
     var mobileBtn = $('.btn-mobile');
-    var mainMenu = $('.main-nav .menu-menu-1-container');
+    var mainMenu = $('.main-nav .menu-main-menu-container');
     mobileBtn.on('click', function(e){
       e.preventDefault();
       mainMenu.toggleClass('show');
       $(this).toggleClass('active');
     });
   }
-  
+
   heroSlider = function() {
     $('.home-hero .slider').bxSlider({
       mode: 'fade',
@@ -141,7 +141,7 @@ $(function(){
 
   navScroll = function() {
     var navLink = $('#products-nav a');
-  
+
     navLink.on('click', function(e) {
       e.preventDefault();
       var target = $(this.hash);
@@ -153,13 +153,13 @@ $(function(){
       }
     });
   }
-    
+
   $(window).on('load', function() {
     $('.animate').addClass('fade-in');
   });
-  
+
   $(".body").fitVids();
-  
+
   mobileNav();
   heroSlider();
   testimonialSlider();
