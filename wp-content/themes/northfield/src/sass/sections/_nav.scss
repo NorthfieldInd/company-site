@@ -59,6 +59,10 @@
     text-align: right;
   }
 
+  @include bp-min-max($large, $xlarge) {
+    letter-spacing: 0;
+  }
+
   &:hover {
     @include bp-max-width($large) {
       color: #fff;

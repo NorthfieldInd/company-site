@@ -40,7 +40,8 @@
   text-transform: uppercase;
 }
 
-.footer-contact {
+.footer-contact,
+.footer-sub-co {
   @include font-size(13px);
   margin-bottom: $base;
   font-weight: $med;
@@ -59,7 +60,6 @@
     display: none;
   }
 }
-
 
 .footer-address,
 .footer-phone,
