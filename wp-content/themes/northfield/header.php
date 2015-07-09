@@ -9,7 +9,7 @@
   	<title><?php wp_title( '|', true, 'right' ); ?></title>
   	<meta name="title" content="<?php wp_title( '|', true, 'right' ); ?>">
   	<meta name="description" content="<?php bloginfo('description'); ?>" />
-  	<link rel="icon" type="image/png" href="/favicon.png">
+  	<link rel="icon" type="image/png" href="/wp-content/themes/northfield/dist/images/favicon.png">
   	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" />
     <script src="//use.typekit.net/wvq6nbh.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
@@ -21,9 +21,9 @@
   </head>
   <body <?php body_class(); ?>>
     <?php get_template_part( 'partials/svg' ); ?>
-  
+
   	<div class="container">
-  
+
   		<header class="header">
   		  <div class="wrapper">
     			<div class="logo">
