@@ -92,7 +92,7 @@
             <div class="icon">
               <svg class="icon-fast-track"><use xlink:href="#icon-fast-track" /></svg>
             </div>
-            <h4>Fast Track On-Boarding</h4>
+            <h4>Fast Track Onboarding</h4>
           </li>
         </ul>
 
@@ -138,8 +138,6 @@
 		    <?php the_field('home_bottom_section'); ?>
 		  </div>
 		</section>
-
-    <?php // get_template_part( 'partials/featured-posts' ); ?>
 
 	<?php endwhile; endif; ?>
 

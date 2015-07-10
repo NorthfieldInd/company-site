@@ -10,7 +10,7 @@
 
           <p class="footer-sub-co">Please visit our subsidiary company for more services at <a href="http://www.dnmachining.com" target="_blank">dnmachining.com</a></p>
 
-          <p class="footer-copyright">&copy;<?php echo date('Y'); ?> Northfield Industries <span class="footer-credit"><a href="http://bradsawicki.com" target="_blank">Web Development</a>: Brad Sawicki</span> <span class="pipe">|</span> <span class="footer-credit">Web Design: Frohlichstein Inc.</span></p>
+          <p class="footer-copyright">&copy;<?php echo date('Y'); ?> Northfield Industries</p>
 
         </div>
       </footer>
