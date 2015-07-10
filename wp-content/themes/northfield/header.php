@@ -36,6 +36,13 @@
   			  <?php } ?>
           </div>
       		<nav class="main-nav">
+            <a href="" class="btn-mobile">
+              <span class="icon-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </span>
+            </a>
       			<?php wp_nav_menu( array('menu'=>'2') ); ?>
       		</nav>
   		  </div>
