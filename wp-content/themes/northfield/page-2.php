@@ -54,7 +54,7 @@
 
 		    <div class="home-solutions-logos">
 		      <div class="logo-northfield">
-		        <img src="<?php echo get_template_directory_uri(); ?>/src/images/logo.svg" alt="Northfield Industries">
+		        <img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo.svg" alt="Northfield Industries">
 		      </div>
 		      <div class="logo-solutions">
 		        <svg class="logo-total-solutions"><use xlink:href="#logo-total-solutions" /></svg>
