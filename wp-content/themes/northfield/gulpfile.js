@@ -30,7 +30,7 @@ gulp.task('sass', function() {
      })
     .pipe(sourcemaps.write())
     .pipe(autoprefixer('last 2 version'))
-    // .pipe(minifycss())
+    .pipe(minifycss())
     .pipe(gulp.dest('./'))
     .pipe(stream());
 });
