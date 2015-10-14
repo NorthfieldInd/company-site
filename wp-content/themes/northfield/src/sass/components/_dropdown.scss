@@ -1,12 +1,4 @@
 
-<a href="" class="btn-mobile">
-  <span class="icon-menu">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-  </span>
-</a>
-
 .sub-menu {
   @include bp-min-width($large) {
     display: none;

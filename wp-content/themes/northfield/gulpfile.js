@@ -35,17 +35,6 @@ gulp.task('sass', function() {
     .pipe(stream());
 });
 
-// gulp.task('sass', function() {
-//   return gulp.src('src/scss/*.scss')
-//     .pipe(sourcemaps.init())
-//       .pipe(sass())
-//     .pipe(sourcemaps.write())
-//     .pipe(autoprefixer('last 2 version'))
-//     .pipe(minifycss())
-//     .pipe(gulp.dest('./'))
-//     .pipe(reload({stream:true}));
-// });
-
 
 gulp.task('scripts', function() {
   return gulp.src('src/js/*.js')

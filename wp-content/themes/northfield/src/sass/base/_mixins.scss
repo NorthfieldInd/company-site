@@ -52,7 +52,7 @@
 
 // GLOBAL TRANSITION
 @mixin global-transition($speed) {
-	transition: all $speed ease-in;
+  transition: all $speed ease-in;
 }
 
 

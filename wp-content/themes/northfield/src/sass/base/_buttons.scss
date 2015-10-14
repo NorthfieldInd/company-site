@@ -1,6 +1,6 @@
 
 a {
-	color: $blue;
+  color: $blue;
 }
 
 @mixin btn {
@@ -141,13 +141,6 @@ a {
 
 .btn {
   @include btn;
-
-  &.red {
-    background: $red;
-
-    &:hover {
-    }
-  }
 }
 
 .cta-link {
