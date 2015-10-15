@@ -48,7 +48,7 @@
 	  );
   	register_post_type( 'testimonials' , $args );
   }
-  
+
   // Products Post Type
 	add_action('init', 'products_register');
   function products_register() {
@@ -113,7 +113,7 @@
 	  );
   	register_post_type( 'gallery' , $args );
   }
-  
+
   // Register Sidebar
   function northfield_widgets_init() {
   	register_sidebar( array(
@@ -177,6 +177,10 @@
     remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
     remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
     remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0 );
+    remove_action('wp_head', 'print_emoji_detection_script', 7 );
+    remove_action('admin_print_scripts', 'print_emoji_detection_script' );
+    remove_action('wp_print_styles', 'print_emoji_styles' );
+    remove_action('admin_print_styles', 'print_emoji_styles' );
 	}
 	add_action('init', 'removeHeadJunk');
 
@@ -185,7 +189,7 @@
     return is_array($var) ? array_intersect($var, array('current-menu-item', 'current-menu-parent', 'current-menu-ancestor')) : '';
   }
   add_filter('nav_menu_css_class', 'nav_class_filter', 100, 1);
-  
+
   // Remove Contact Plugin CSS/JS
   //add_filter( 'wpcf7_load_js', '__return_false' );
   add_filter( 'wpcf7_load_css', '__return_false' );
@@ -193,7 +197,7 @@
 	// Custom Menu
 	register_nav_menu( 'primary', __( 'Navigation Menu', 'stadtler' ) );
 
-	// Navigation 
+	// Navigation
 	function post_navigation() {
 	  $prev_page = get_previous_posts_link('Previous Page');
 	  $next_page = get_next_posts_link('Next Page');
@@ -212,7 +216,7 @@
   		echo '</div>';
 		}
 	}
-	
+
   // Single Navigation
 	function single_post_navigation($input) {
 	  $prev_post = get_previous_post();
@@ -230,7 +234,7 @@
 	  }
 		echo '</div>';
 	}
-	
+
 	// Posted On
 	function posted_on() {
 		printf( __( '<span class="sep">Posted </span><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a> by <span class="byline author vcard">%5$s</span>', '' ),
@@ -241,7 +245,7 @@
 			esc_attr( get_the_author() )
 		);
 	}
-	
+
 	// Attachment Figures
 	function html5_insert_image($html, $id, $caption, $title, $align, $url, $size) {
 	  $src  = wp_get_attachment_image_src( $id, $size, false );
@@ -254,7 +258,7 @@
     return $html5;
   }
   add_filter( 'image_send_to_editor', 'html5_insert_image', 10, 9 );
-	
+
 	// Image Sizes
 	add_image_size( 'news-thumb', 376, 240, true );
 	add_image_size( 'blog-image', 792 );
